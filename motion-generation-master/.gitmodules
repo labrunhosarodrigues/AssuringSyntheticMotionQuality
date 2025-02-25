@@ -1,0 +1,6 @@
+[submodule "mdm"]
+	path = mdm
+	url = https://github.com/guytevet/motion-diffusion-model
+[submodule "HumanML3D"]
+	path = HumanML3D
+	url = https://github.com/EricGuo5513/HumanML3D.git

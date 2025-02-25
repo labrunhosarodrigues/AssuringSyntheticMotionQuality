@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools~=64.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motiongen"
+description = "company code to paper 'Controlled Large Scale Synthetic Motion Dataset Generation Leveraging Text-to-Motion and Sample-wise Quality Assurance'"
+readme = "README.md"
+authors = [
+    {name = "Lourenco Abrunhosa Rodrigues", email =  "lourenco@uni-bremen.de"}
+]
+license = {file = "LICENSE"}
+dynamic = ["version"]
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: Implementation :: CPython',
+]
+
+dependencies = [
+    # list the package dependencies here!
+]
+
+[project.urls]
+repository = "https://github.com/labrunhosarodrigues/AssuringSyntheticMotionQuality"
+
+[tool.setuptools.packages]
+find = {exclude = ["tests", "mdm_aux", "motion_training"]}
+
+[tool.setuptools.dynamic]
+version = {attr = "motiongen.__version__"}

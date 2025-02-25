@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mobert = {git = "https://github.com/labrunhosarodrigues/MoBERT", ref = "make-pip-installable"}
+pandas = "*"
+numpy = "*"
+
+[dev-packages]
