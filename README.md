@@ -1,5 +1,7 @@
 # motiongen
 
+[Original Paper](https://www.scitepress.org/Papers/2026/144405/144405.pdf)
+
 This project contains the code used in the development of the paper "Controlled Large Scale Synthetic Motion Dataset Generation Leveraging Text-to-Motion and Sample-wise Quality Assurance".
 
 It contains scripts for 3 different parts:
@@ -27,6 +29,24 @@ To use MoBERT to evaluate a set of generated samples, use the command `python -m
 To perform the quality assurance procedure, after collecting MoBERT scores, run `python -m motiongen.quality_checking`.
 
 Finally, to perform training on the filtered dataset, activate the motion_training environment and run `motiongen.activity_recognition.motion_training`.
+
+## Citation
+
+If you cite this work, please use the following:
+
+```bib
+@conference{biosignals26,
+author={Lourenço Rodrigues and Markus Wenzel and Felix Putze},
+title={Controlled Large Scale Synthetic Motion Dataset Generation Leveraging Text-to-Motion and Sample-Wise Quality Assurance},
+booktitle={Proceedings of the 19th International Joint Conference on Biomedical Engineering Systems and Technologies - Volume 1: BIOSIGNALS},
+year={2026},
+pages={140-150},
+publisher={SciTePress},
+organization={INSTICC},
+doi={10.5220/0014440500004070},
+isbn={978-989-758-802-0},
+}
+```
 
 ## Disclamer
 
